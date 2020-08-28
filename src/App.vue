@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,7 +12,13 @@
   text-align: center;
   color: #2c3e50;
 }
-
+* {
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+}
 #nav {
   padding: 30px;
 
@@ -29,4 +31,12 @@
     }
   }
 }
+.el-popover {
+  display: none !important;
+}
+  .clearfloat:after{
+    content: "";
+    clear: both;
+    display: block;
+  }
 </style>
